@@ -1,0 +1,133 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "tpeg",
+    "patterns": [
+        {
+            "include": "#code"
+        }
+    ],
+    "repository": {
+        "code": {
+            "patterns": [
+                {
+                    "include": "#comment-block"
+                },
+                {
+                    "include": "#comment-line"
+                },
+                {
+                    "include": "#example-block"
+                },
+                {
+                    "include": "#double-quote"
+                },
+                {
+                    "include": "#tag"
+                },
+                {
+                    "include": "#label"
+                },
+                {
+                    "include": "#constant"
+                },
+                {
+                    "include": "#operator"
+                },
+                {
+                    "include": "#range"
+                }
+            ],
+            "repository": {
+                "comment-block": {
+                    "name": "comment",
+                    "begin": "/\\*",
+                    "end": "\\*/",
+                    "patterns": [
+                        {
+                            "name": "comment",
+                            "match": "(\\\\.)"
+                        }
+                    ]
+                },
+                "example-block": {
+                    "name": "string.quoted.triple.tpeg",
+                    "begin": "'''",
+                    "end": "'''",
+                    "patterns": [
+                        {
+                            "name": "string.quoted.triple.tpeg",
+                            "match": "(\\\\.)"
+                        }
+                    ]
+                },
+                "double-quote": {
+                    "name": "variable.tpeg",
+                    "begin": "\"",
+                    "end": "\"",
+                    "patterns": [
+                        {
+                            "name": "variable.tpeg",
+                            "match": "(\\\\.)"
+                        }
+                    ]
+                },
+                "comment-line": {
+                    "name": "comment",
+                    "match": "//.*"
+                },
+                "constant": {
+                    "patterns": [
+                        {
+                            "match": "(\\'.*?\\')",
+                            "name": "string.quoted.single.literal.tpeg"
+                        },
+                        {
+                            "match": "\\.",
+                            "name": "keyword.constant.tpeg"
+                        },
+                        {
+                            "match": "example",
+                            "name": "entity.name.function.tpeg"
+                        }
+                    ]
+                },
+                "range": {
+                    "name": "string.unquote.tpeg",
+                    "begin": "\\[",
+                    "end": "\\]",
+                    "patterns": [
+                        {
+                            "name": "string.unquote.inner.tpeg",
+                            "match": "\\\\."
+                        }
+                    ]
+                },
+                "operator": {
+                    "patterns": [
+                        {
+                            "match": "\\=|\\?|\\*|\\/|\\+|\\||\\-|\\!|\\$|\\@|\\&|\\^",
+                            "name": "keyword.operator.tpeg"
+                        }
+                    ]
+                },
+                "bracket": {
+                    "patterns": [
+                        {
+                            "match": "\\{|\\}|\\(|\\)",
+                            "name": "constant.language.operator.tpeg"
+                        }
+                    ]
+                },
+                "tag": {
+                    "match": "(#[a-zA-Z][a-zA-Z0-9]*)",
+                    "name": "storage.type.tpeg"
+                },
+                "label": {
+                    "match": "([a-zA-Z][a-zA-Z0-9]*\\:)",
+                    "name": "storage.type.tpeg"
+                }
+            }
+        }
+    },
+    "scopeName": "source.tpeg"
+}

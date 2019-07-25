@@ -1,0 +1,31 @@
+{
+    "name": "tpeg-syntax",
+    "displayName": "TPEG Syntax Highlight",
+    "description": "Syntax highlight of TPEG",
+    "publisher": "Caterpie-poke",
+    "version": "0.1.2",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Caterpie-poke"
+    },
+    "icon": "images/icon.png",
+    "contributes": {
+        "languages": [{
+            "id": "tpeg",
+            "aliases": ["TPEG", "tpeg"],
+            "extensions": [".tpeg"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tpeg",
+            "scopeName": "source.tpeg",
+            "path": "./syntaxes/tpeg.tmLanguage.json"
+        }]
+    }
+}
