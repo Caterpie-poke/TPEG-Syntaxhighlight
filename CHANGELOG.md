@@ -1,9 +1,7 @@
 # Change Log
 
-All notable changes to the "tpeg-syntax" extension will be documented in this file.
++ 0.0.1
+  + project start!
++ 0.1.2
+  + initial release version
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
