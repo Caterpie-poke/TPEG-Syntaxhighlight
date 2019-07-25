@@ -49,6 +49,10 @@
                         }
                     ]
                 },
+                "comment-line": {
+                    "name": "comment",
+                    "match": "//.*"
+                },
                 "example-block": {
                     "name": "string.quoted.triple.tpeg",
                     "begin": "'''",
@@ -71,19 +75,11 @@
                         }
                     ]
                 },
-                "comment-line": {
-                    "name": "comment",
-                    "match": "//.*"
-                },
                 "constant": {
                     "patterns": [
                         {
                             "match": "(\\'.*?\\')",
                             "name": "string.quoted.single.literal.tpeg"
-                        },
-                        {
-                            "match": "\\.",
-                            "name": "keyword.constant.tpeg"
                         },
                         {
                             "match": "example",
@@ -105,26 +101,18 @@
                 "operator": {
                     "patterns": [
                         {
-                            "match": "\\=|\\?|\\*|\\/|\\+|\\||\\-|\\!|\\$|\\@|\\&|\\^",
+                            "match": "\\.|\\=|\\?|\\*|\\/|\\+|\\||\\-|\\!|\\$|\\@|\\&|\\^",
                             "name": "keyword.operator.tpeg"
-                        }
-                    ]
-                },
-                "bracket": {
-                    "patterns": [
-                        {
-                            "match": "\\{|\\}|\\(|\\)",
-                            "name": "constant.language.operator.tpeg"
                         }
                     ]
                 },
                 "tag": {
                     "match": "(#[a-zA-Z][a-zA-Z0-9]*)",
-                    "name": "storage.type.tpeg"
+                    "name": "support.type.tpeg"
                 },
                 "label": {
                     "match": "([a-zA-Z][a-zA-Z0-9]*\\:)",
-                    "name": "storage.type.tpeg"
+                    "name": "support.type.tpeg"
                 }
             }
         }
