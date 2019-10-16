@@ -3,7 +3,7 @@
     "displayName": "TPEG Syntax Highlight",
     "description": "Syntax highlight of TPEG",
     "publisher": "Caterpie-poke",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "engines": {
         "vscode": "^1.14.0"
     },

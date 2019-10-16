@@ -8,3 +8,5 @@
   + change color of tag, label
 + 0.2.1
   + add `[_.]` in regex of tag and label
++ 0.2.2
+  + fix example syntax
