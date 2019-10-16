@@ -4,5 +4,7 @@
   + project start!
 + 0.1.2
   + initial release version
-+ 0.1.3
++ 0.2.0
   + change color of tag, label
++ 0.2.1
+  + add `[_.]` in regex of tag and label
