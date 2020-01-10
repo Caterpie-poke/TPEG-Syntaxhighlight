@@ -78,7 +78,7 @@
                 "constant": {
                     "patterns": [
                         {
-                            "match": "(\\'.*?\\')",
+                            "match": "('(\\\\.|[^'])*?')",
                             "name": "string.quoted.single.literal.tpeg"
                         },
                         {
