@@ -12,3 +12,7 @@
   + fix example syntax
 + 0.2.3
   + fix: escape `\'` in string
++ 0.2.4
+  + allow using Japanese in Tag
+  + change icon
+

@@ -110,7 +110,7 @@
                     ]
                 },
                 "tag": {
-                    "match": "(#[a-zA-Z][a-zA-Z0-9_.]*)",
+                    "match": "(#(.(?![ \u3000\t\n\r}]))*.)",
                     "name": "support.type.tpeg"
                 },
                 "label": {
