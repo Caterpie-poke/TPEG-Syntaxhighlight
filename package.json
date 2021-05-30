@@ -2,8 +2,8 @@
     "name": "tpeg-syntax",
     "displayName": "TPEG Syntax Highlight",
     "description": "Syntax highlight of TPEG",
-    "publisher": "Caterpie-poke",
-    "version": "0.2.4",
+    "publisher": "ywata",
+    "version": "0.2.5",
     "engines": {
         "vscode": "^1.14.0"
     },
@@ -24,7 +24,9 @@
                     "tpeg"
                 ],
                 "extensions": [
-                    ".tpeg"
+                    ".tpeg",
+                    ".gpeg",
+                    ".pegtree"
                 ],
                 "configuration": "./language-configuration.json"
             }
